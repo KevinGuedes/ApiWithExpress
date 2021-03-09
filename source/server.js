@@ -47,7 +47,7 @@ app.post('/products', (req, res, next) => {
 
 app.put('/products/:id', (req, res, next) => {
 
-    const product = database.saveNewProduct({
+    database.saveNewProduct({
         id: req.params.id,
         name: req.body.name,
         price: req.body.price
