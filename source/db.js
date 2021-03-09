@@ -19,8 +19,16 @@ function getProducts() {
     return Object.values(products)
 }
 
+function deleteProductById(id) {
+    delete products[id]
+}
+
+
 module.exports = {
     saveNewProduct,
     getProductById,
-    getProducts
+    getProducts,
+    deleteProductById
 }
+
+//Dados sem persistência
